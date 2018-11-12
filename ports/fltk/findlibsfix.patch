@@ -23,8 +23,8 @@ index 37c0c08..b1f52d1 100644
 +if(PNG_FOUND)
 +	set(LIB_png ${PNG_LIBRARIES})
 +	set(HAVE_PNG_H ${PNG_FOUND})
-+	
 +endif()
++
 +find_package(ZLIB REQUIRED)
 +if(ZLIB_FOUND)
 +	set(LIB_zlib ${ZLIB_LIBRARIES})

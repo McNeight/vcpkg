@@ -7,16 +7,16 @@
 #
 
 include(vcpkg_common_functions)
-set(SOURCE_PATH ${CURRENT_BUILDTREES_DIR}/src/fltk-1.3.4-1)
+set(SOURCE_PATH ${CURRENT_BUILDTREES_DIR}/src/fltk-1.3.4-2)
 vcpkg_download_distfile(ARCHIVE
-    URLS "http://fltk.org/pub/fltk/1.3.4/fltk-1.3.4-1-source.tar.gz"
-    FILENAME "fltk.tar.gz"
-    SHA512 0be1c8e6bb7a8c7ef484941a73868d5e40b90e97a8e5dc747bac2be53a350621975406ecfd4a9bcee8eeb7afd886e75bf7a6d6478fd6c56d16e54059f22f0891
+    URLS "http://fltk.org/pub/fltk/1.3.4/fltk-1.3.4-2-source.tar.gz"
+    FILENAME "fltk-1.3.4-2-source.tar.gz"
+    SHA512 cc169449b71ca966b2043ceedc55e92220ccb6be07b0ac54eeec36bbed5d60e2f59c6faba2403b5292b9120f5255227880a066d98ac82e57d502522bc627fd4d
 )
 vcpkg_extract_source_archive(${ARCHIVE})
 
 vcpkg_apply_patches(
-    SOURCE_PATH ${CURRENT_BUILDTREES_DIR}/src/fltk-1.3.4-1
+    SOURCE_PATH ${CURRENT_BUILDTREES_DIR}/src/fltk-1.3.4-2
     PATCHES "${CMAKE_CURRENT_LIST_DIR}/findlibsfix.patch"
 )
 
